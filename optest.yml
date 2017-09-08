@@ -14,8 +14,6 @@
   - template:
       src: ~/relay42-optest/src/main/resources/application.properties
       dest: /tmp/application.properties
-      owner: vlopez
-      group: staff
       mode: 0644
 
   - lineinfile:
