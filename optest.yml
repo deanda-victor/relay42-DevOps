@@ -1,27 +1,22 @@
 ---
 # This playbook installs the test application for Relay42.
 - hosts: localhost
-  #remote_user: vlopez
+
   
   tasks:
 
-  - include_vars: group_vars/vars
+  - include_vars: group_vars/vars.yml
 
   - git:
       repo: 'https://github.com/lc-nyovchev/opstest.git'
-      dest: /Users/vlopez/relay42-optest
+      dest: ~/relay42-optest
 
   - template:
-      src: /Users/vlopez/relay42-optest/src/main/resources/application.properties
+      src: ~/relay42-optest/src/main/resources/application.properties
       dest: /tmp/application.properties
       owner: vlopez
       group: staff
       mode: 0644
-
- # vars_files:
- # - group_vars/vault.yml  
-
-  
 
   - lineinfile:
       path: /tmp/application.properties
