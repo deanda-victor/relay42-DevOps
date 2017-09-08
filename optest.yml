@@ -4,11 +4,11 @@
   #remote_user: vlopez
   
   tasks:
-    
+
   - include_vars: group_vars/vars
 
   - git:
-      repo: 'https://github.com/deanda-victor/relay42-DevOps.git'
+      repo: 'https://github.com/lc-nyovchev/opstest.git'
       dest: /Users/vlopez/relay42-optest
 
   - template:
