@@ -19,7 +19,7 @@
  # vars_files:
  # - group_vars/vault.yml  
 
-  - include_vars: group_vars/vault.yml
+  - include_vars: group_vars/vars
 
   - lineinfile:
       path: /tmp/application.properties
