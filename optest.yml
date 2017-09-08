@@ -4,9 +4,11 @@
   #remote_user: vlopez
   
   tasks:
+    
+  - include_vars: group_vars/vars
 
   - git:
-      repo: 'https://github.com/lc-nyovchev/opstest.git'
+      repo: 'https://github.com/deanda-victor/relay42-DevOps.git'
       dest: /Users/vlopez/relay42-optest
 
   - template:
@@ -19,7 +21,7 @@
  # vars_files:
  # - group_vars/vault.yml  
 
-  - include_vars: group_vars/vars
+  
 
   - lineinfile:
       path: /tmp/application.properties
