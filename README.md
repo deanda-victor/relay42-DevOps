@@ -6,7 +6,7 @@ git clone https://github.com/deanda-victor/relay42-DevOps.git
 
 2- Run the build-start-demo.sh
 
-3- A prompt thatt request credentials will appear: Set <<relay42>> as the password
+3- A prompt that request credentials will appear: Set "relay42" as the password
 Running Ansible...
 Vault password: 
 
